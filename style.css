@@ -58,7 +58,6 @@ body{
  
     min-width: 375px;
     height: 100vh;
-
     text-transform: uppercase;
 }
 
@@ -142,7 +141,7 @@ header section{
 /* @@@@@@@@@@@@ styling the form @@@@@@@@@@@@@ */
 
 .form-section{
-    min-height: 400px;
+    min-height: 500px;
     align-items: center;
     justify-content: center;
     font-size: 14px;
