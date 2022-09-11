@@ -68,7 +68,15 @@ function validate(e){
 function validateExpireCvc(e){
     if (!e.target.checkValidity() && e.target.value != ''){
         e.target.classList.add('error')
-        e.target.parentNode.setAttribute('data-set' , 'wrong format')
+        if (e.target.id == 'month') {
+            e.target.parentNode.setAttribute('data-set' , 'please enter a valid month')
+        }
+        else if (e.target.id == 'year'){
+            e.target.parentNode.setAttribute('data-set' , 'please enter a valid year')
+        }
+        else{
+            e.target.parentNode.setAttribute('data-set' , 'please enter a valid cvc')
+        }
     }
     else if (e.target.value == '') {
         e.target.classList.add('error')
@@ -79,7 +87,7 @@ function validateExpireCvc(e){
         e.target.parentNode.setAttribute('data-set' , '') 
         cardExpire.textContent =  inputs[2].value + '/' + inputs[3].value
     } 
-    if (e.target.name == 'cvc') {
+    if (e.target.id == 'cvc') {
         cardCvc.textContent = inputs[4].value
     }
 }
