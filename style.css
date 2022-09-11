@@ -43,7 +43,7 @@ a{
 
 }
 
-submit{
+input[type=submit]{
     cursor: pointer;
 }
 
