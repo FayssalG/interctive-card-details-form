@@ -142,6 +142,7 @@ header section{
 }
 
 .form-section form{
+    max-width: 400px;
     display: flex;
     flex-direction: column;
 }
