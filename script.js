@@ -53,7 +53,7 @@ function validate(e){
         validateExpireCvc(e)   
     }
 
-    if(e.target.name == 'card-num'){
+    if(e.target.id == 'card-num'){
         validateCardNum(e)
     }
 
@@ -90,7 +90,7 @@ function validateCardNum(e){
         e.target.parentNode.setAttribute('data-set' , 'wrong input numbers only')
         e.target.setCustomValidity('invalid')
     }
-    else if(!e.target.checkValidity() && !e.target.value == ''){
+    else if(e.target.value.length < 16 && e.target.value != ''){
         e.target.classList.add('error')
         e.target.parentNode.setAttribute('data-set' , 'card number should have 16 digits')
 
