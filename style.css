@@ -86,6 +86,7 @@ header section{
     position: absolute;
     border-radius: 5px;
     color: var(--white);
+    box-shadow: 2px 9px 10px var(--very-dark-violet);
 }
 
 
